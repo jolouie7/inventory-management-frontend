@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CategoryItem = (props) => {
+const Category = (props) => {
   return (
     <div>
       {props.name}
@@ -8,4 +8,4 @@ const CategoryItem = (props) => {
   )
 }
 
-export default CategoryItem
+export default Category

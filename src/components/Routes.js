@@ -1,8 +1,9 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import LandingPage from "./LandingPage";
 import NavBar from "./NavBar";
 import CategoryList from "../containers/CategoryList";
+import ItemList from "../containers/ItemList"
 
 export default function App() {
   return (
@@ -15,6 +16,9 @@ export default function App() {
         <Switch>
           <Route path="/category-list">
             <CategoryList />
+          </Route>
+          <Route path="/item-list">
+            <ItemList />
           </Route>
           <Route path="/">
             <LandingPage />

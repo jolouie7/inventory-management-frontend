@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import CategoryItem from '../components/CategoryItem';
+import Category from "../components/Category";
 
 const CategoryList = () => {
   const [categories, setCategories] = useState([])
@@ -18,7 +18,7 @@ const CategoryList = () => {
 
   return (
     <div>
-      {categories.map(cat => <CategoryItem name={cat.name} />)}
+      {categories.map((cat, index) => <Category name={cat.name} key={index} />)}
     </div>
   )
 }

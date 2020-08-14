@@ -13,6 +13,7 @@ const NavBar = () => {
           <Nav className="mr-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/category-list">Categories</Nav.Link>
+            <Nav.Link href="/item-list">Items</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
