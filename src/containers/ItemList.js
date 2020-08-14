@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Item from "../components/Item";
+import { Container, Row, Col } from "react-bootstrap";
 
 const CategoryList = () => {
   const [items, setItems] = useState([]);
@@ -18,9 +19,15 @@ const CategoryList = () => {
 
   return (
     <div>
-      {items.map((item, index) => (
-        <Item name={item.name} key={index} />
-      ))}
+      <Container>
+        <Row>
+          {items.map((item, index) => (
+            <Col>
+              <Item name={item.name} key={index} />
+            </Col>
+          ))}
+        </Row>
+      </Container>
     </div>
   );
 };

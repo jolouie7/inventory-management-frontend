@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import Category from "../components/Category";
+import { Container, Row, Col } from 'react-bootstrap';
 
 const CategoryList = () => {
   const [categories, setCategories] = useState([])
@@ -18,9 +19,17 @@ const CategoryList = () => {
 
   return (
     <div>
-      {categories.map((cat, index) => <Category name={cat.name} key={index} />)}
+      <Container>
+        <Row s={3}>
+          {categories.map((cat, index) => (
+            <Col key={index}>
+              <Category name={cat.name} key={index} id={cat.id}/>
+            </Col>
+          ))}
+        </Row>
+      </Container>
     </div>
-  )
+  );
 }
 
 export default CategoryList

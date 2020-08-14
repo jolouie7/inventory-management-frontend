@@ -4,6 +4,7 @@ import LandingPage from "./LandingPage";
 import NavBar from "./NavBar";
 import CategoryList from "../containers/CategoryList";
 import ItemList from "../containers/ItemList"
+import CategoryDetail from "../containers/CategoryDetail";
 
 export default function App() {
   return (
@@ -17,6 +18,9 @@ export default function App() {
           <Route path="/category-list">
             <CategoryList />
           </Route>
+          {/* <Route path="/category-detail">
+            <CategoryDetail />
+          </Route> */}
           <Route path="/item-list">
             <ItemList />
           </Route>
