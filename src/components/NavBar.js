@@ -7,7 +7,7 @@ const NavBar = () => {
   return (
     <div>
       <Navbar bg="light" expand="lg">
-        <Navbar.Brand href="#home">Storr</Navbar.Brand>
+        <Navbar.Brand href="/">Storr</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
